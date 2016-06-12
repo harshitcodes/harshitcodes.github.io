@@ -24,7 +24,7 @@ body{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    /*position: fixed;*/
+    position: fixed;
 }
 
 .sidenav a {
@@ -167,14 +167,33 @@ a, a:visited, a:hover, a:active {
 	text-align: center;
 	/*width: 600px;*/
 }
+.my-info-details{
+	/*max-width: 600px;*/
+	margin : 0 auto;
+	text-align: center;
+}
+.my-info-details > h2{
+	font-size: 50px;
+	font-weight: normal;
+}
+.my-info-details{
+	font-size: 1.3em;
+	line-height: 1.5;
+}
 
 #skills{
 	max-width: 600px;
 	margin : 0 auto;
 	text-align: center;
 }
+#projects{
+	max-width: 600px;
+	margin : 0 auto;
+	margin-top: 40px;
+	text-align: center;
+}
 
-#skills > h2{
+/*#skills > h2{
 	font-size: 50px;
 	font-weight: normal;
 }
@@ -182,12 +201,13 @@ a, a:visited, a:hover, a:active {
 	font-size: 1.3em;
 	line-height: 1.5;
 	
-}
+}*/
 #contact{
 	margin-top: 90px;
 }
 #contact > img{
-	position: relative;
+	/*position: relative;*/
+	max-width: 90%;
 }
 #contact > h2{
 	position: absolute;
