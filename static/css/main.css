@@ -1,0 +1,203 @@
+body{
+	font-family: Raleway;
+	margin: 0 0 0 0;
+	color: #fff;
+}
+#main{
+	background-image: url(../images/bg_portfolio_greybrick.jpg);
+	background-size: cover;
+	height: 760px;
+	width: 100%;
+	bottom: 0;
+}
+
+/*side nav =========================================================*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1A3742;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    /*position: fixed;*/
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+#nav-icon{
+	/*padding-top: 5%;*/
+	/*padding-left: 5%;*/
+}
+
+#content{
+	font-family: Raleway;
+	position: absolute;
+    width: 650px;
+    height: 620px;
+    left: 50%;
+    top: 50%;
+    margin-left: -330px;
+    margin-top: -250px;
+    text-align: center;
+    color: #fff;
+}
+
+#content > h1{
+	text-align: center;
+	font-family: Raleway;
+	color: #fff;
+	font-weight: normal;
+	font-size: 75px;
+	letter-spacing: 3px;
+}
+#content > p{
+	text-align: center;
+	font-size: 23px;
+	line-height: 1.5;
+}
+#header{
+	display: flex;
+	justify-content: space-between;
+
+}
+#resume{
+	padding-top: 5%;
+	padding-right: 5%;
+	color: white;
+}
+#resume > a{
+	color: white;
+	text-decoration : none;
+	font-size: 30px;
+}
+
+/*profile list *************************************/
+
+#profiles{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin-left: 100px;
+	padding-bottom: 5%;
+}
+
+nav{
+	height: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 999;
+    padding: 0px;
+    padding-top: 5%;
+    text-align: center;
+}
+#nav-links{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	border-top:  1px solid #E6E0CB;
+	text-align: center;
+}
+#nav-links > li {
+	display: inline-block;
+    margin-right: 40px;
+    padding-bottom: 0px;
+}
+
+
+#nav-links > li >  a{
+	text-decoration : none;
+	font-size: 20px;
+	display: block;
+    color: #fff8e1;
+    text-transform: uppercase;
+    padding-top: 28px;
+    padding-bottom: 0px;
+    border-top: 2px solid transparent;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+#nav-links > li >  a:hover{
+	border-top: 2px solid #fff; 
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fff8e1;
+}
+
+
+/*skillset =============================================================*/
+
+#skillset{
+	
+	background-size: cover;
+	background-color: #1A3742;
+	background-image: url(http://pierre.io/img/bg_blue.png);
+	padding-top: 5%;
+	background-repeat: no-repeat;
+	height: 1200px;
+	text-align: center;
+	/*width: 600px;*/
+}
+
+#skills{
+	max-width: 600px;
+	margin : 0 auto;
+	text-align: center;
+}
+
+#skills > h2{
+	font-size: 50px;
+	font-weight: normal;
+}
+#skills > p{
+	font-size: 1.3em;
+	line-height: 1.5;
+	
+}
+#contact{
+	margin-top: 90px;
+}
+#contact > img{
+	position: relative;
+}
+#contact > h2{
+	position: absolute;
+	left : 45%;
+	font-size: 50px;
+	z-index: 999;
+}
+#contact > p{
+	position: absolute;
+	left : 35%;
+	font-size: 25px;
+	z-index: 999;
+}
