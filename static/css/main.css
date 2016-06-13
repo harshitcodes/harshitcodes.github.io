@@ -11,6 +11,14 @@ body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    background: #1a3742;
+}
+::-webkit-scrollbar-thumb {
+    background: #5D6D63;
+}
+
 section{
 	margin: 0;
     padding: 0;
@@ -22,6 +30,7 @@ section{
 #main{
 	background-image: url(../images/bg_portfolio_greybrick.jpg);
 	background-size: cover;
+	background-position: top center;
 	height: 760px;
 	width: 100%;
 	bottom: 0;
@@ -60,11 +69,12 @@ section{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px !important;
+    font-size: 36px;
     margin-left: 50px;
 }
 #nav-icon{
 	/*padding-top: 5%;*/
+	font-size: 30px;
 	/*padding-left: 5%;*/
 }
 
@@ -91,8 +101,10 @@ section{
 }
 #content > p{
 	text-align: center;
-	font-size: 23px;
-	line-height: 1.5;
+    color: #E6E0CB;
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 #header{
 	display: flex;
@@ -173,11 +185,11 @@ a, a:visited, a:hover, a:active {
 /*skillset =============================================================*/
 
 #skillset{
-	
-	background-size: cover;
 	background-color: #1A3742;
 	background-image: url(http://pierre.io/img/bg_blue.png);
+	background-size: cover;
 	padding-top: 5%;
+	height: auto;
 	background-repeat: no-repeat;
 	height: 1200px;
 	text-align: center;
@@ -237,3 +249,62 @@ a, a:visited, a:hover, a:active {
 	font-size: 25px;
 	z-index: 999;
 }
+
+
+/*responsive ====================================================*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+	{
+/* Styles */
+
+	#main{
+		height : 1800px;
+	}
+	#content{
+		height: 1200px;
+    	left: 50%;
+    	top: 50%;
+    	margin-top: -500px;
+	}
+
+	#content > p{
+		font-size: 3.1em;
+	    padding-bottom: 1.5em;
+	    padding-top: 1.5em;
+	}
+	#content > h1{
+		font-size : 100px;
+	}
+	#profiles > li > a > img{
+		width : 150%;
+		/*padding-left: 30%;*/
+	}
+	#resume > a{
+		font-size: 3.1em;
+	}
+	#nav-icon{
+		font-size : 50px;
+	}
+	.sidenav a{
+		font-size: 40px;
+	}
+	.sidenav > .closebtn{
+		/*padding-bottom: 5%;*/
+		font-size: 60px;
+	}
+	.my-info-details > h2{
+		font-size: 75px;
+	}
+	.my-info-details{
+		font-size: 2.8em;
+	}
+	#contact > h2{
+		left: 40%;
+	}
+	#contact > p{
+		left : 25%;
+	}
+
+}
+
