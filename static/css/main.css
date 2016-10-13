@@ -31,7 +31,7 @@ section{
 	background-image: url(../images/bg_portfolio_greybrick.jpg);
 	background-size: cover;
 	background-position: top center;
-	height: 760px;
+	height: 785px;
 	width: 100%;
 	bottom: 0;
 }
@@ -173,7 +173,7 @@ nav{
     -webkit-transition: .5s;
 }
 #nav-links > li >  a:hover{
-	border-top: 2px solid #fff; 
+	border-top: 2px solid #fff;
 }
 
 a, a:visited, a:hover, a:active {
@@ -215,10 +215,10 @@ a, a:visited, a:hover, a:active {
 	text-align: center;
 }
 #projects{
-	max-width: 600px;
-	margin : 0 auto;
+	/*max-width: 600px;*/
+	/*margin : 0 auto;*/
 	margin-top: 40px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 /*#skills > h2{
@@ -228,7 +228,7 @@ a, a:visited, a:hover, a:active {
 #skills > p{
 	font-size: 1.3em;
 	line-height: 1.5;
-	
+
 }*/
 #contact{
 	margin-top: 90px;
@@ -248,6 +248,36 @@ a, a:visited, a:hover, a:active {
 	left : 35%;
 	font-size: 25px;
 	z-index: 999;
+}
+
+/*thumbnail css ================================================*/
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(66, 139, 202, 0.75);
+    width: 100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
+.thumbnail{
+    background-color : #333;
+    box-shadow : 0 10px 10px rgba(0,0,0,.075)
+}
+
+.project-img{
+    width: 340px;
+    height: 350px!important;
 }
 
 
